@@ -33,17 +33,17 @@ If your dock isn't as easy to find as the example above, run the command with an
 
 ## Customizing the rules file
 
-In step 3 above, the example device listed has a vendor ID of "0bda", and a product ID of "0487".  Use the values of your dock ID and replace these values in the docksound.rules file.
+In step 3 above, the example device listed has a vendor ID of "0bda", and a product ID of "0487".  Use the values of your dock ID and replace these values in the `docksound.rules` file.
 
 ## Customizing the script file
 
-Edit docksound.sh with the info you gathered in steps 1 and 2 replacing the values within the quotes of the following variables:
-
-SINK_NAME corresponds to "Default sink name"
-SOURCE_NAME corresponds to "Default source name"
-USERNAME corresponds to "$USER"
-USERID corresponds to "$UID"
-
+Edit `docksound.sh` with the info you gathered in steps 1 and 2, replacing the values **within the quotes** of the following variables:
+```
+SINK_NAME	corresponds to	"Default sink name"
+SOURCE_NAME	corresponds to	"Default source name"
+USERNAME	corresponds to	"$USER"
+USERID		corresponds to	"$UID"
+```
 ## Putting the files in the right place
 
 You will need root access to put the files where they need to go.  The script will be run as root.
