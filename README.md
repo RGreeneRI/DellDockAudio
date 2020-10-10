@@ -12,7 +12,9 @@ Example output below is cleaned up to only show the relevant needed info...
 1. Your Username and UID:
 ```
 echo $USER
+johnsmith
 echo $UID
+9999
 ```
 
 2. Sound Device names (Set the desired sound devices in the GUI before running this command):
