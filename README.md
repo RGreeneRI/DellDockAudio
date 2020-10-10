@@ -52,7 +52,7 @@ Place `docksound.rules` in `/etc/udev/rules.d/`
 Place `docksound.sh` in `/root/`.  If you want to put `docksound.sh` somewhere else, you'll have to change the path in `docksound.rules` to point th the right location.
 
 ## Misc
-You can tail -f /tmp/DockPlugEvent.log to watch detection happen.  When I plug my dock in it gets detected multiple times, which is why the script checks if the desired sound devices are already active before switching.  Each detection fires an instance of the script...
+You can `tail -f /tmp/DockPlugEvent.log` to watch detection happen.  When I plug my dock in it gets detected multiple times, which is why the script checks if the desired sound devices are already active before switching.  Each detection fires an instance of the script...
 
 
 If you know a better way to do this, please let me know.
