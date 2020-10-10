@@ -46,13 +46,13 @@ USERID		corresponds to	"$UID"
 ```
 ## Putting the files in the right place
 
-You will need root access to put the files where they need to go.  The script will be run as root.
+You will need root access to put the files where they need to go.  The script will be run as root.  You may need to `chmod +x docksound.sh` to make it executable.
 
 Place `docksound.rules` in `/etc/udev/rules.d/`
 Place `docksound.sh` in `/root/`.  If you want to put `docksound.sh` somewhere else, you'll have to change the path in `docksound.rules` to point th the right location.
 
 ## Misc
-You can tail -f /tmp/DockPlugEvent.log to watch it happen.  When I plug my dock in it gets detected multiple times, which is why the script checks if the desired sound devices are already active before switching.  Each detection fires an instance of the script...
+You can tail -f /tmp/DockPlugEvent.log to watch detection happen.  When I plug my dock in it gets detected multiple times, which is why the script checks if the desired sound devices are already active before switching.  Each detection fires an instance of the script...
 
 
 If you know a better way to do this, please let me know.
