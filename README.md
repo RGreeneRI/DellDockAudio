@@ -1,6 +1,6 @@
 # DellDockAudio
 
-Forces pulseaudio sound device switch via script when docking station detected.
+Forces pulseaudio sound device switch via script when docking station detected.  Tested on Ubuntu 20.04 only.
 
 ## Why?
 I have a Dell WD19 dock and a Latitude 5580 runing Ubuntu 20.04.  When I plug my dock in to my laptop, it switches sound output to the dock's headphone jack rather than the dock's line-out jack.  If I change the sound output device in settings, it will work fine until I unplug the dock. It "forgets" my choice when I plug it back in.
