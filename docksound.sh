@@ -3,7 +3,7 @@
 # Define Variables
 SINK_NAME='alsa_output.usb-Generic_USB_Audio_200901010001-00.HiFi__hw_Dock_1__sink'
 SOURCE_NAME='alsa_input.usb-Generic_USB_Audio_200901010001-00.HiFi__hw_Dock__source'
-USERNAME='username'
+USERNAME='johnsmith'
 USERID='9999'
 PID=$(echo $$)
 
