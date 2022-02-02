@@ -34,6 +34,6 @@ sudo -u $USERNAME -E pacmd stat | grep $SINK_NAME &&
 
 # Change sound Source and Sink to the Docking Station sound device if NOT already set
 echo "$(date) - PID:$PID Firing Sound device switch" >> /tmp/DockPlugEvent.log
-sudo -u $USERNAME -E pacmd set-default-source "SOURCE_NAME"
+sudo -u $USERNAME -E pacmd set-default-source "$SOURCE_NAME"
 sudo -u $USERNAME -E pacmd set-default-sink "$SINK_NAME"
 echo "$(date) - PID:$PID Fired Sound device switch" >> /tmp/DockPlugEvent.log
